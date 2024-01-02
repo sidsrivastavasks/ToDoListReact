@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import List from "./List";
+import EmptyList from "../Buttons/EmptyList";
 
 function Body() {
     const [listData, setListData] = useState([
@@ -10,14 +11,14 @@ function Body() {
         "Take a shower",
     ]);
 
-    const clearList = () => {
+    const removeData = () => {
         setListData([]);
     };
 
     return (
         <div>
             <List data={listData} />
-            <button onClick={clearList}>Clear List</button>
+            <EmptyList clearList={removeData} />
         </div>
     );
 }
