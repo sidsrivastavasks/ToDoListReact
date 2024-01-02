@@ -1,10 +1,13 @@
 import "./styles.css";
+import Header from "./Component/Header/Header.js";
+import Body from "./Component/Body/List.js";
 
 export default function App() {
-  return (
-    <div className="Application">
-      <h1>Aye Captain! 🫡</h1>
-      <h2>Lets create something!</h2>
-    </div>
-  );
+    const listData = [];
+    return (
+        <div className="App">
+            <Header />
+            <Body data={listData} />
+        </div>
+    );
 }

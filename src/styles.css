@@ -1,4 +1,11 @@
-.Application {
-  font-family: sans-serif;
-  text-align: center;
+.App {
+    font-family: sans-serif;
+}
+
+.Header {
+    text-align: center;
+}
+
+.Subheader {
+    text-align: center;
 }
