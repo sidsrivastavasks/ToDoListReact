@@ -1,7 +1,7 @@
-function Body({ data }) {
+function List({ data }) {
     return (
         <>
-            {data.length > 0 ? (
+            {data != null && data.length > 0 ? (
                 <ul>
                     {data.map((item, index) => (
                         <li key={index}>{item}</li>
@@ -14,4 +14,4 @@ function Body({ data }) {
     );
 }
 
-export default Body;
+export default List;
